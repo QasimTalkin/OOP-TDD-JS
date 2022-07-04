@@ -24,7 +24,21 @@ describe('Player', () => {
     expect(player.getInventory()).toEqual(false);
     
    });
-   
-   
+  
+   test('Player health', () => {
+  
+    expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
+
+   });
+  
+   test('Player is alive', () => {
+  
+    expect(player.isAlive()).toBeTruthy();
+
+    player.health = 0;
+  
+    expect(player.isAlive()).toBeFalsy();
+   });
+
 });
 

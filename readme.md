@@ -93,14 +93,24 @@ describe('sum', () => {
 * we can use `new` keyword to create new object.
 * the name of the constructor function is preferre to be capitalized. e.g. `Person`
 * constructor contains all the properties of the object, e.g: A Car
+* `this` is a reference to the object being created.
+* `new` keyword is used to create a new object.
 ```JS
 function Car(make='', model, year) {
   this.make = make; // will be set to default '' id no make is passed in
   this.model = model;
   this.year = year;
 }
+let car1 = new Car('Toyota', 'Corolla', 2000);
 ```
+
 
 # SOLID Principles
 * Single Responsibility Principle: A class should have a single responsibility.
 * the scope of the function should be limited to the class and contain only the code that is required to perform the task.
+
+# Prototype 
+* Prototype objects simply inherit the method from the constructor rather than having their own instances of that method.
+* Prototype is a way to share methods and properties between objects.
+* Why use it? We don't want to create a new object for every instance of the class. We want to share the same methods and properties.
+* so we write the function once and then use it in multiple objects.
