@@ -76,7 +76,17 @@ describe('sum', () => {
 * `toMatch`: check result to match expected value.
 * `toHaveLength`: check result to have length of expected value.
 * `toHaveProperty`: check result to have property of expected value.
+* `arrayContaining`: check result to contain expected value.
 
+# Mock 
+* **Mocks** allow us to fake assumed data, which allows the test at hand to focus only on the logic it cares about. 
+* we store mock files in __mocks__ directory.
+
+# running test is jest
+* `npm run test`: run test.
+* `npm run test ExampleFileName`: run test for ExampleFileName.
+* `npm run test -- --watch`: run test and watch for changes.
+* `npm run test -- --coverage`: run test and generate coverage, coverage is a tool that generates a report of the code coverage of your project.
 
 # Constructors 
 * Constructors are functions that are used to create new objects.
@@ -84,9 +94,13 @@ describe('sum', () => {
 * the name of the constructor function is preferre to be capitalized. e.g. `Person`
 * constructor contains all the properties of the object, e.g: A Car
 ```JS
-function Car(make, model, year) {
-  this.make = make;
+function Car(make='', model, year) {
+  this.make = make; // will be set to default '' id no make is passed in
   this.model = model;
   this.year = year;
 }
 ```
+
+# SOLID Principles
+* Single Responsibility Principle: A class should have a single responsibility.
+* the scope of the function should be limited to the class and contain only the code that is required to perform the task.
