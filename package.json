@@ -1,0 +1,23 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "--- marp: true theme: gaia style: |   section.lead h1 {   text-align: center;   }   section.middle li{   text-align: center;   } --- <!-- headingDivider: 2 --> <!-- theme: gaia class: lead -->",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QasimTalkin/OOP-TDD-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QasimTalkin/OOP-TDD-JS/issues"
+  },
+  "homepage": "https://github.com/QasimTalkin/OOP-TDD-JS#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
