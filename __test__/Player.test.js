@@ -10,7 +10,7 @@ describe('Player', () => {
   let player = new Player('Player 1', 100, 10, 10);
   test('Should return player stats', () => {
    
-   expect(player.getStats()).toEqual('Player 1 has 100 health, 10 strength, and 10 agility.');
+   expect(player.getStats()).toEqual(expect.any(Object));
    expect(player.isAlive()).toBe(true);
    expect(player.name).toBe('Player 1');
    expect(player.strength).toEqual(expect.any(Number));
