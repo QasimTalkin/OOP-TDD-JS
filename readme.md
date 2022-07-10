@@ -17,7 +17,10 @@ class: lead
 
 # OOP and TDD IN JS
 
-# Some OOP Definitions  
+# Some OOP Definitions
+<style scoped> 
+ {font-size : 1.2em;}
+</style>
 * OOP: Object Oriented Programming is a programming paradigm that uses objects as the primary way of representing data and functionality in a computer program.
 * Prototype: A prototype is an object that is used as a template for creating new objects.
 * Encapsulation: The idea of encapsulation is to make the code more readable and maintainable.
